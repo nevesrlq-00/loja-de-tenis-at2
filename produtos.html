@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerStore - Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">👟 SneakerStore</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="produtos.html" class="active">Produtos</a>
+            <a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a>
+            <a href="contato.html">Contato</a>
+            <a href="mensagens.php">Painel Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Nosso Catálogo de Tênis</h2>
+        <br>
+        <div class="produtos-grid">
+            <div class="card-produto">
+                <img src="https://juicysneakers.com.br/cdn/shop/files/nike-air-max-plus-tn-supreme-black-red-preto-vermelho_5.webp?v=1760480060" alt="Air Max TN">
+                <h3>Air Max TN</h3>
+                <p class="preco">R$ 1299.99</p>
+                <button onclick="adicionarAoCarrinho('Nike Air ', 1299.99)" class="btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card-produto">
+                <img src="https://cdn-images.farfetch-contents.com/22/91/62/32/22916232_53059675_600.jpg" alt="Tênis Puma">
+                <h3>Puma Suede XL</h3>
+                <p class="preco">R$ 599.99</p>
+                <button onclick="adicionarAoCarrinho('Puma ', 599.99)" class="btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card-produto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueQYNUlmDPKzhNy9ZaOd1TxVdNpFnuELcPIguZvxuLA&s=10" alt="Nike black">
+                <h3>Air Zoom Pegasus Premium</h3>
+                <p class="preco">R$ 1500.00</p>
+                <button onclick="adicionarAoCarrinho('Nike Air', 1500.00)" class="btn">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SneakerStore - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

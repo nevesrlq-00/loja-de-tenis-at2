@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerStore - Carrinho</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">👟 SneakerStore</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html" class="active">Carrinho (<span id="cart-count">0</span>)</a>
+            <a href="contato.html">Contato</a>
+            <a href="mensagens.php">Painel Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Seu Carrinho de Compras</h2>
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-carrinho">
+                    <!-- Preenchido via JavaScript -->
+                </tbody>
+            </table>
+            <br>
+            <h3>Total: R$ <span id="total-carrinho">0.00</span></h3>
+            <br>
+            <button onclick="limparCarrinho()" class="btn btn-danger">Esvaziar Carrinho</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SneakerStore - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", carregarCarrinho);
+    </script>
+</body>
+</html>

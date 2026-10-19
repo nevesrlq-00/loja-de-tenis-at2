@@ -1,0 +1,14 @@
+<!-- Bloco de Consulta de CEP / Endereço -->
+<div class="consulta-cep-container">
+  <h3>Calcular Frete / Endereço de Entrega</h3>
+  <input type="text" id="cep" placeholder="Digite seu CEP (ex: 01001000)">
+  <button type="button" onclick="buscarCEP()">Buscar CEP</button>
+  <p id="mensagem-cep" style="color: #e53e3e; font-weight: bold; margin-top: 5px;"></p>
+
+  <div style="display: flex; flex-direction: column; gap: 5px; margin-top: 10px;">
+    <input type="text" id="rua" placeholder="Rua / Logradouro" readonly>
+    <input type="text" id="bairro" placeholder="Bairro" readonly>
+    <input type="text" id="cidade" placeholder="Cidade" readonly>
+    <input type="text" id="uf" placeholder="UF" style="width: 60px;" readonly>
+  </div>
+</div>
